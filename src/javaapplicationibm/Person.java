@@ -68,6 +68,7 @@ public class Person {
                     "Height:" + Height + "\n" +
                     "Weight: " + weight + "\n" +
                     "IBM: " + BMI();
+            
         }
     
 }

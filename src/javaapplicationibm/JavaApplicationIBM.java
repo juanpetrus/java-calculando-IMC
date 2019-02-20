@@ -19,14 +19,14 @@ public class JavaApplicationIBM {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         
-        Person[] arr = new Person[3];
+        Person[] arr = new Person[1];
         
         Employee emp = new Employee();
         
         emp.setName("Jose");
         emp.setHeight(1.80);
         emp.setWheight(80.0);
-        emp.setSalary(1200);
+        emp.setSalary(12000);
         emp.setRole("princiapal");
         
         System.out.println("Employee: " + emp.getInfo());
@@ -39,6 +39,10 @@ public class JavaApplicationIBM {
             obj.setHeight(read.nextDouble());
             System.out.println("\nWeight");
             obj.setWheight(read.nextDouble());
+            System.out.println("\nCargo");
+            emp.setRole(read.nextLine());
+            System.out.println("\nSalario");
+            emp.setSalary(read.nextDouble());            
             
             arr[i] = obj;
         } 
