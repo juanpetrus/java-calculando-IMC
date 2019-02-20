@@ -19,6 +19,12 @@ public class JavaApplicationIBM {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         
+        Employee emp = new Employee();
+        
+        emp.getName("Jose");
+        emp.getHeight(1,80);
+        emp.getWeight(80,0);
+        
         Person[] arr = new Person[3];
         
         for(int i=0; i<arr.length; i++){
