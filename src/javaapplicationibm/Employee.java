@@ -28,19 +28,24 @@ public class Employee extends Person{
     
     public void setSalary(double S){
         if(S>=0){
+            
             Salary = S; 
             
-        if(S<= 1787.77){
-            IR = S;
-        }else if(S>1787.78 && S<2679.29){
-            IR = S - (S/(7.5*100));
-        }else if(S>2679.30 && S<3572.43){
-            IR = S - (S/(15*100));
-        }else if(S>3572.44 && S<4463.81){
-            IR = S - (S/(22.5*100));
-        }else if(S>4463.81){
-            IR = S - (100/(S*27.5));
-        }
+            if(S<= 1787.77){
+                IR = S;
+            }else if(S>1787.78 && S<2679.29){
+                double percentual = 7.5/100;
+                IR = S - (percentual*S);
+            }else if(S>2679.30 && S<3572.43){
+                double percentual = 15/100;
+                IR = S - (percentual*S);
+            }else if(S>3572.44 && S<4463.81){
+                double percentual = 22.5/100;
+                IR = S - (percentual*S);
+            }else if(S>4463.81){
+                double percentual = 27.5/100;
+                IR = S - (percentual*S);
+            }
         }else{
             System.out.println("Salary can´t be negative");
         }

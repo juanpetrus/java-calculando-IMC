@@ -23,31 +23,30 @@ public class JavaApplicationIBM {
         
         Employee emp = new Employee();
         
-        emp.setName("Jose");
-        emp.setHeight(1.80);
-        emp.setWheight(80.0);
-        emp.setSalary(12000);
-        emp.setRole("princiapal");
-        
-        System.out.println("Employee: " + emp.getInfo());
+        //emp.setName("Jose");
+        //emp.setHeight(1.80);
+        //emp.setWheight(80.0);
+        //emp.setSalary(12000);
+        //emp.setRole("princiapal");        
+        //System.out.println("Employee: " + emp.getInfo());
         
         for(int i=0; i<arr.length; i++){
             Person obj = new Person();
-            System.out.println("Enter Person " + (i+1) + "Name: ");
+            System.out.println("Enter Person " + (i+1) + " Name: ");
             obj.setName(read.next());
             System.out.println("\nHeight");
             obj.setHeight(read.nextDouble());
             System.out.println("\nWeight");
-            obj.setWheight(read.nextDouble());
+            obj.setWheight(read.nextDouble());            
             System.out.println("\nCargo");
-            emp.setRole(read.nextLine());
+            emp.setRole(read.next());            
             System.out.println("\nSalario");
             emp.setSalary(read.nextDouble());            
             
             arr[i] = obj;
         } 
         for(int i=0; i<arr.length; i++){
-            System.out.println(arr[i].getInfo());
+            System.out.println(emp.getInfo());
         }       
     }
     
