@@ -15,7 +15,7 @@ public class Person {
      */
    
         // TODO code application logic here
-        private String Name;
+        protected String Name;
         private Double Height;
         private Double weight;
 
@@ -67,7 +67,7 @@ public class Person {
             return "Name:" + Name + "\n" +
                     "Height:" + Height + "\n" +
                     "Weight: " + weight + "\n" +
-                    "IBM: " + BMI() + "\n";
+                    "IBM: " + BMI();
         }
     
 }

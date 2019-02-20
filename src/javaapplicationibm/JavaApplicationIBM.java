@@ -19,13 +19,17 @@ public class JavaApplicationIBM {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         
+        Person[] arr = new Person[3];
+        
         Employee emp = new Employee();
         
-        emp.getName("Jose");
-        emp.getHeight(1,80);
-        emp.getWeight(80,0);
+        emp.setName("Jose");
+        emp.setHeight(1.80);
+        emp.setWheight(80.0);
+        emp.setSalary(1200);
+        emp.setRole("princiapal");
         
-        Person[] arr = new Person[3];
+        System.out.println("Employee: " + emp.getInfo());
         
         for(int i=0; i<arr.length; i++){
             Person obj = new Person();
